@@ -81,6 +81,10 @@ class Scene2 extends Phaser.Scene {
             } else {
                 powerUp.play("gray");
             }
+
+            powerUp.setVelocity(100, 100);
+            powerUp.setCollideWorldBounds(true);
+            powerUp.setBounce(1);
         }
     }
 
